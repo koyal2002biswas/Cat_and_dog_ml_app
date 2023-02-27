@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask Apps</title>
+      <style>
+             .entire{
+                 border: dotted 2px;
+               
+                 margin-left: 200px;
+                 margin-right: 200px;
+                 margin-top: 100px;
+                 text-align: center;
+/*                  color: rgb(232,190,172); */
+          }
+          .text{
+              background-color: rgb(220,190,155);
+              font-size: 30px;
+          }
+          .answer{
+              background-color: rgb(220,190,155);
+              font-size: 50px;
+          }
+/*           .image{
+                 background-color: rgb(232,190,172);
+              
+          } */
+    </style>
+  </head>
+  <body>
+      <div class="entire">
+          <div class="text">
+              The picture is of a:
+          </div>
+          
+<!--      <img src="{{ url_for('static', filename='cat3.jpg') }}" alt="no"> -->
+      <div class="image">
+      <img src="{{img}}">
+          </div>
+      
+<!--       <img src="static/face.jpg" alt="not found">  -->
+<!--       <form action='/submit', method='post' enctype="multipart-form-data">
+          Username: <input type="text" name="name"/>
+          <br><br>
+          Password: <input type= "password" name= "password">
+          <input type ="submit" value="submit"/>
+      </form>
+       -->
+     
+      <div class ="answer">{{txt}}</div>
+      </div>
+
+  </body>
+</html>
+     
+      
